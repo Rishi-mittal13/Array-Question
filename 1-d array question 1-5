@@ -161,7 +161,29 @@ void main()
  }
 
 
+//Q-6:-WAP TO INPUT A ARRAY OF N SIZE AND FIND SUM OF THOSE NO. WHICH ENDING WITH 9.
 
+
+#include<stdio.h>
+int main()
+{  int size,sum;
+sum=0;
+  printf(" enter size of array: ");
+  scanf("%d",&size);
+   int x[size],i;
+   printf("enter elements  of array: ");
+   for(i=0;i<size;i++)
+ {
+   scanf("%d", &x[i]);
+ }
+ for(i=0;i<size;i++)
+ { if((x[i]-9)%10==0)
+   sum+=x[i];
+ }
+ printf("\n\nsum=%d",sum);
+ return 0;
+}
+    
 
    
 
