@@ -25,3 +25,43 @@ public class BinarySearch {
         System.out.println("INDEX = "+BinarySearch1(ar,e));
     }
 }
+
+
+//Time complexity analysis of binary search.
+import java.util.Scanner;
+public class bs {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        long[] arr = new long[10000000];
+        for(int i = 0 ; i<10000000 ; i++){
+            arr[i] = i+1;
+        }
+        int se = sc.nextInt();
+        int len = arr.length;
+        int s = 0 ;
+        int e = len-1;
+        boolean b = true;
+        double start = System.currentTimeMillis();
+        while(s<=e){
+            int mid = (s+e)/2;
+            if(arr[mid]==se){
+                System.out.println(mid);
+                b=false;
+                break;
+            }
+            else if(arr[(int) mid]>se){
+                e = mid-1;
+            }
+            else{
+                s = mid+1;
+            }
+        }
+        if(b){
+            System.out.println(-1);
+        }
+        double end = System.currentTimeMillis();
+        System.out.println("total time taken = "+ (end-start));
+       
+        sc.close();
+    }
+}
