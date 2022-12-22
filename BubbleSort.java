@@ -1,3 +1,6 @@
+//bubble sort algorithm
+//Time - Complexity =  O(n^2);
+
 public class bubsort {
     public static void bubbleSort(int[] arr , int len){
         for(int i = 0 ; i<len ; i++){
