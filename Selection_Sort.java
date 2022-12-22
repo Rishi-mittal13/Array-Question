@@ -1,4 +1,5 @@
 //selection sort
+//Time - complexity =  O(n^2).
 public class selecSort {
     public static void selectionSort(int[] arr){
         int ind = -1;
