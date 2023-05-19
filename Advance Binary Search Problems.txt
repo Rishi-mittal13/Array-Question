@@ -1,0 +1,15 @@
+//Binary Search Question based On Book ALlocation Algorithm .
+1). Book Allocation (Coding Block).
+2). Murthal parantha (Coding Block ).
+3). painters Partitions (Coding Block ).
+4). Covid 19 At ATK Hospita (Coding Block ).
+5). Aggresive Cows (SPOJ , Coding BLock ).
+6). 2305. Fair Distribution of Cookies (Leetcode).
+7). 410. Split Array Largest Sum (Leetcode).
+8). 1011. Capacity To Ship Packages Within D Days (Leetcode).
+9). 875. Koko Eating Bananas (LeetCode).
+10).2226. Maximum Candies Allocated to K Children (LeetCode).
+
+
+
+
