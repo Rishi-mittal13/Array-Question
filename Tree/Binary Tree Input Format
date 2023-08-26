@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main {
+    static Scanner sc =  new Scanner(System.in);
+    private class BinaryTree{
+        private class Node{
+            int data ;
+            Node left ;
+            Node right;
+        }
+        Node root =  createTree();
+        public BinaryTree(){root =  createTree()}
+
+        private Node createTree(){
+            int item=  sc.nextInt();
+            Node n =  new Node();
+            n.data =  item;
+            boolean hasLeft =  sc.nextBoolean();
+            if(hasLeft) n.left =  createTree();
+            boolean hasRight =  sc.nextBoolean();
+            if(hasRight) n.right =  createTree();
+            return n;
+        }
+    }
+    public static void main (String args[]) {
+        BinaryTree bt =  new BinaryTree();
+
+        
+    }
+}
