@@ -86,3 +86,34 @@ public class Main {
 
 }
 
+
+
+
+
+
+import java.util.*;
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+	TreeNode(){}
+    TreeNode(int x) { this.val = x; }
+}
+
+public class Main{
+	static Scanner sc =  new Scanner(System.in);
+	public static void main(String[] args){
+		TreeNode root = createTree();
+	}
+    public static TreeNode createTree(){
+        int item=  sc.nextInt();
+        TreeNode n =  new TreeNode();
+        n.val =  item;
+        boolean hasLeft =  sc.nextBoolean();
+        if(hasLeft) n.left =  createTree();
+        boolean hasRight =  sc.nextBoolean();
+        if(hasRight) n.right =  createTree();
+        return n;
+    }
+}
+
