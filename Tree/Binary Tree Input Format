@@ -117,3 +117,50 @@ public class Main{
     }
 }
 
+
+
+
+
+
+//level order input .
+
+public static TreeNode createBinaryTree(String input) {
+        String[] values = input.split(" ");
+        int index = 0;
+
+        if (values.length == 0) {
+            return null;
+        }
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        TreeNode root = new TreeNode(Integer.parseInt(values[index++]));
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+            TreeNode current = queue.poll();
+
+            if (index < values.length) {
+                String leftVal = values[index++];
+                if (!leftVal.equals("-1")) {
+                    current.left = new TreeNode(Integer.parseInt(leftVal));
+                    queue.offer(current.left);
+                }
+            }
+
+            if (index < values.length) {
+                String rightVal = values[index++];
+                if (!rightVal.equals("-1")) {
+                    current.right = new TreeNode(Integer.parseInt(rightVal));
+                    queue.offer(current.right);
+                }
+            }
+        }
+
+        return root;
+    }
+
+
+
+
+
+
